@@ -17,3 +17,4 @@ if(parolaUtente === nuovaParolaAlContrario){
     alert(`${parolaUtente} non è una parola palidroma`)
 }
 
+ 
