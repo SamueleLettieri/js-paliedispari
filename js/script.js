@@ -17,7 +17,11 @@ if(parolaUtente === nuovaParolaAlContrario){
     alert(`${parolaUtente} non è una parola palidroma`)
 } */
 
-const oddOrEven = ["pari", "dispari" ];
+
+
+
+
+const oddOrEven = ["pari", "dispari" ]; 
 
 const userOddOrEven = prompt("inserisci cosa vuoi scegliere (pari o dispari)");
 console.log(userOddOrEven);
@@ -28,7 +32,8 @@ console.log(usernumber);
 let pari;
 let dispari;
 
-if(oddOrEven[0] === userOddOrEven){
+
+ if(oddOrEven[0] === userOddOrEven){
     pari = userOddOrEven;
     console.log(pari);
 } else if (oddOrEven[1] === userOddOrEven){
@@ -46,5 +51,18 @@ console.log(risultato);
 
 
 let somma = risultato + usernumber;
-console.log(somma)
+console.log(somma);
 
+function scoprireIlVincitore (somma){
+    if((somma % 2 == 0) && ( userOddOrEven === pari)){
+        return("ha vinto l'utente");
+    } else if((somma % 2 == 1) && ( userOddOrEven === dispari)){
+        return("ha vinto l'utente");
+    } else {
+        return("ha vinto l'ia");
+    }
+    
+}
+
+let vincitore = scoprireIlVincitore ();
+console.log(vincitore)
